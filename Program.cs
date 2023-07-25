@@ -15,7 +15,9 @@
             #endregion
 
             #region Struct
-            //Complex c = new Complex();
+            //Complex c = new Complex(10);
+
+            //Console.WriteLine(MyFun(c));
 
             //Console.WriteLine(c.Name);
 
@@ -38,8 +40,17 @@
             //e2.Name = "Ahmed";
             //Console.WriteLine(e1.Name);
 
+            //Employee e = new Employee(10 , "saber") { Id = 20, Name = "Saber", Salary = 2000 }; // Object Intializer
+
+            //Console.WriteLine(e.Name);
+
             #endregion
 
+        }
+        public static int MyFun(Complex c)
+        {
+            c.Id = 15;
+            return c.Id +10 ;
         }
         public static List<int> oddNumbers(int l, int r)
         {
