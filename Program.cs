@@ -51,21 +51,45 @@ namespace Practise
 
             //Console.WriteLine(e1);
             #endregion
-
+            #region Property
             //Employee e1 = new Employee();
-
             //e1.Salary = 50000;
-
             //Employee.BaseSalary = e1.Salary;
-
             //Console.WriteLine(Employee.BaseSalary);
+            //Employee employee = new Employee();
+            //employee.Salary = 5000;
+            //employee.Age = 30;
+            //Console.WriteLine(employee.Salary); 
+            #endregion
+            #region Array
+            ////int[] arr = new int[6] ;
 
-            Employee employee = new Employee();
-            employee.Salary = 5000;
-            employee.Age = 30;
-            Console.WriteLine(employee.Salary);
+            //Creature[] arr = new Creature[3]
+            //{
+            //    new Employee(),
+            //    new Creature(),
+            //    new Employee()
+            //};
 
+            //foreach (var item in arr)
+            //{
+            //    item.Move();
+            //} 
+            #endregion
+            #region String
+            //string str = "Hello"; // String is Imutable 'Onece Created Never Changed'
+
+            //str += "ITI";
+            //Test(str);
+            //Console.WriteLine(str); 
+            #endregion
         }
+
+        static void Test(string str)
+        {
+            str += " Saber"; 
+        }
+
         public static int MyFun(Complex c)
         {
             c.Id = 15;
