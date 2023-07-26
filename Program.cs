@@ -50,7 +50,7 @@
 
             Employee c1 = c;
 
-            Console.WriteLine(c.Equals(5));
+            Console.WriteLine(c.Equals(c1));
 
         }
         public static int MyFun(Complex c)

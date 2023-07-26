@@ -36,11 +36,18 @@ namespace Practise
 
         public override bool Equals(object obj)
         {
-            Employee e = obj as Employee;
+            //Employee e = obj as Employee;
+            //if (e == null) return false;
+            //return this.Id == e.Id;
+            
+            Employee e;
 
-            if (e == null) return false;
-
-            return this.Id == e.Id;
+            if (obj is Employee)
+            {
+                e = (Employee)obj;
+                return this.Id == e.Id;
+            }
+            else return false;
         }
         public override void Move()
         {
