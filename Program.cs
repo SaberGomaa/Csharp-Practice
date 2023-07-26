@@ -4,7 +4,7 @@
 
     internal class Program
     {
-        
+
         static void Main(string[] args)
         {
             #region Enums
@@ -45,6 +45,12 @@
             //Console.WriteLine(e.Name);
 
             #endregion
+
+            Employee c = new Employee() { Id = 20 , Name = "saber" , Salary = 2000};
+
+            Employee c1 = c;
+
+            Console.WriteLine(c.Equals(5));
 
         }
         public static int MyFun(Complex c)

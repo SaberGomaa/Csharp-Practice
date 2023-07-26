@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace Practise
 {
-    public class Employee
+    public class Employee : Creature
     {
         public int Id;
         public string Name;
         public int Salary;
 
-        public Employee() : this(1 , string.Empty)
+        public Employee() : base() 
         {
+            Id = 0;
+            Name = "";
+            base.Weight = 1;
         }
 
         public Employee(int id) : this(id, string.Empty)
@@ -24,6 +27,24 @@ namespace Practise
         {
             Id = id;
             Name = name;
+        }
+
+        public override string ToString()
+        {
+            return $"ID : {Id} , Name : {Name} , Salary : {Salary}";
+        }
+
+        public override bool Equals(object obj)
+        {
+            Employee e = obj as Employee;
+
+            if (e == null) return false;
+
+            return this.Id == e.Id;
+        }
+        public override void Move()
+        {
+            Console.WriteLine("Employee is move .. ");
         }
 
     }
