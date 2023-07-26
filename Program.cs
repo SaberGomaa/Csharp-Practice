@@ -1,4 +1,6 @@
-﻿namespace Practise
+﻿using System.Collections;
+
+namespace Practise
 {
    
 
@@ -13,7 +15,6 @@
             //Console.WriteLine(color);
 
             #endregion
-
             #region Struct
             //Complex c = new Complex(10);
 
@@ -27,7 +28,6 @@
             //c = c1;
             //Console.WriteLine(c.Name); 
             #endregion
-
             #region Class
 
             //Employee e1 = new Employee(10, "Saber");
@@ -46,11 +46,11 @@
 
             #endregion
 
-            Employee c = new Employee() { Id = 20 , Name = "saber" , Salary = 2000};
+            Employee e = new Employee() { Id = 20, Name = "saber", Salary = 2000 };
 
-            Employee c1 = c;
+            Employee e1 =  e.Clone();
 
-            Console.WriteLine(c.Equals(c1));
+            Console.WriteLine(e1);
 
         }
         public static int MyFun(Complex c)

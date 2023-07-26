@@ -62,5 +62,12 @@ namespace Practise
             Console.WriteLine("Employee is move .. ");
         }
 
+        public Employee Clone()
+        {
+            Object obj = base.MemberwiseClone(); // Shallow copy // To take Copy from Obj and assign to other refernce
+            
+            return obj as Employee;
+        }
+
     }
 }
