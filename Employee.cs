@@ -12,6 +12,8 @@ namespace Practise
         public string Name;
         public int Salary;
 
+        public static double BaseSalary = 2000;
+
         public Employee() : base() 
         {
             Id = 0;
@@ -63,6 +65,7 @@ namespace Practise
         }
 
         //Shallow copy is a bit-wise copy of an object.
+        //Deep copy stores copies of the object's value
         public Employee Clone()
         {
             Object obj = base.MemberwiseClone(); // Shallow copy // To take Copy from Obj and assign to other refernce

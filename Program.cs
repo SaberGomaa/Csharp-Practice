@@ -28,7 +28,7 @@ namespace Practise
             //c = c1;
             //Console.WriteLine(c.Name); 
             #endregion
-            #region Class
+            #region OOP
 
             //Employee e1 = new Employee(10, "Saber");
 
@@ -44,13 +44,21 @@ namespace Practise
 
             //Console.WriteLine(e.Name);
 
+
+            //Employee e = new Employee() { Id = 20, Name = "saber", Salary = 2000 };
+
+            //Employee e1 =  e.Clone();
+
+            //Console.WriteLine(e1);
             #endregion
 
-            Employee e = new Employee() { Id = 20, Name = "saber", Salary = 2000 };
+            Employee e1 = new Employee();
 
-            Employee e1 =  e.Clone();
+            e1.Salary = 50000;
 
-            Console.WriteLine(e1);
+            Employee.BaseSalary = e1.Salary;
+
+            Console.WriteLine(Employee.BaseSalary);
 
         }
         public static int MyFun(Complex c)
