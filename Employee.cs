@@ -62,6 +62,7 @@ namespace Practise
             Console.WriteLine("Employee is move .. ");
         }
 
+        //Shallow copy is a bit-wise copy of an object.
         public Employee Clone()
         {
             Object obj = base.MemberwiseClone(); // Shallow copy // To take Copy from Obj and assign to other refernce
