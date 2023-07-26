@@ -39,15 +39,23 @@ namespace Practise
             //Employee e = obj as Employee;
             //if (e == null) return false;
             //return this.Id == e.Id;
-            
-            Employee e;
 
-            if (obj is Employee)
+            //Employee e;
+
+            //if (obj is Employee)
+            //{
+            //    e = (Employee)obj;
+            //    return this.Id == e.Id;
+            //}
+            //else return false;
+
+
+            if (obj is Employee e)
             {
-                e = (Employee)obj;
                 return this.Id == e.Id;
             }
             else return false;
+
         }
         public override void Move()
         {
