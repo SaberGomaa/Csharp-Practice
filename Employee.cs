@@ -10,10 +10,25 @@ namespace Practise
     {
         public int Id;
         public string Name;
-        public int Salary;
+        public static double BaseSalary = 2500;
 
-        public static double BaseSalary = 2000;
+        private int salary;
 
+        public int Age { private get; set; }
+        public int Salary
+        {
+            get
+            {
+                return salary;
+            }
+            set
+            {
+                if (value > 3000)
+                    salary = value;
+                else
+                    salary = (int)BaseSalary;
+            }
+        }
         public Employee() : base() 
         {
             Id = 0;
@@ -21,14 +36,15 @@ namespace Practise
             base.Weight = 1;
         }
 
-        public Employee(int id) : this(id, string.Empty)
+        public Employee(int id) : this(id, string.Empty ,22)
         {
         }
 
-        public Employee(int id , string name)
+        public Employee(int id , string name, int age)
         {
             Id = id;
             Name = name;
+            Age = age;
         }
 
         public override string ToString()

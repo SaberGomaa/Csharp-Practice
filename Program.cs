@@ -52,13 +52,18 @@ namespace Practise
             //Console.WriteLine(e1);
             #endregion
 
-            Employee e1 = new Employee();
+            //Employee e1 = new Employee();
 
-            e1.Salary = 50000;
+            //e1.Salary = 50000;
 
-            Employee.BaseSalary = e1.Salary;
+            //Employee.BaseSalary = e1.Salary;
 
-            Console.WriteLine(Employee.BaseSalary);
+            //Console.WriteLine(Employee.BaseSalary);
+
+            Employee employee = new Employee();
+            employee.Salary = 5000;
+            employee.Age = 30;
+            Console.WriteLine(employee.Salary);
 
         }
         public static int MyFun(Complex c)
