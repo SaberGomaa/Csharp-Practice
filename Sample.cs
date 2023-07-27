@@ -13,7 +13,14 @@
 
             return result;
         }
+        public static Sample operator +(Sample s, int num)
+        {
+            Sample result = new Sample();
+            result.Name = s.Name;
+            result.Img = s.Img + num;
 
+            return result;
+        }
         public static bool operator== (Sample s1, Sample s2)
         {
             return s1.Img == s2.Img && s1.Name == s2.Name;
@@ -23,6 +30,14 @@
         {
             if(s1.Img == s2.Img && s1.Name == s2.Name) return false;
             return true;
+        }
+
+        public static implicit operator Sample(int num)
+        {
+            Sample s = new Sample();
+            s.Name = num.ToString();
+            s.Img = num.ToString();
+            return s;
         }
 
         public override string ToString()

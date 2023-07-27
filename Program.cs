@@ -89,8 +89,12 @@ namespace Practise
             Sample s1 = new Sample() { Name = "Maher", Img = "1" };
             Sample s2 = new Sample() { Name = "Saber", Img = "2" };
 
-            Console.WriteLine(s1 == s2); 
-            
+            Sample s3 = s1+ s2;
+            Sample s4 = s1+ 5;
+
+            Sample s5 = 6;
+            Console.WriteLine(s5);
+
             #endregion
 
         }
