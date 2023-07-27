@@ -83,13 +83,22 @@ namespace Practise
             //Test(str);
             //Console.WriteLine(str); 
             #endregion
+
+            #region Operator Overloading
+
+            Sample s1 = new Sample() { Name = "Maher", Img = "1" };
+            Sample s2 = new Sample() { Name = "Saber", Img = "2" };
+
+            Console.WriteLine(s1 == s2); 
+            
+            #endregion
+
         }
 
         static void Test(string str)
         {
             str += " Saber"; 
         }
-
         public static int MyFun(Complex c)
         {
             c.Id = 15;
