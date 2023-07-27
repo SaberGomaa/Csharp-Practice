@@ -93,7 +93,7 @@ namespace Practise
             Sample s4 = s1+ 5;
 
             Sample s5 = 6;
-            string s = s1;
+            string s = (string)s1;
 
             Console.WriteLine(s);
 

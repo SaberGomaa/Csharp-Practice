@@ -40,9 +40,9 @@
             return s;
         }
 
-        public static implicit operator string(Sample s)
+        public static explicit operator string(Sample s)
         {
-            return s.Name +" "+ s.Img;
+            return s.Name + " " + s.Img;
         }
 
         public override string ToString()
