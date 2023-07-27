@@ -93,7 +93,9 @@ namespace Practise
             Sample s4 = s1+ 5;
 
             Sample s5 = 6;
-            Console.WriteLine(s5);
+            string s = s1;
+
+            Console.WriteLine(s);
 
             #endregion
 

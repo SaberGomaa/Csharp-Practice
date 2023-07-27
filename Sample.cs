@@ -40,6 +40,11 @@
             return s;
         }
 
+        public static implicit operator string(Sample s)
+        {
+            return s.Name +" "+ s.Img;
+        }
+
         public override string ToString()
         {
             return $"Name : {Name} , Image : {Img}";
