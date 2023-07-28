@@ -83,21 +83,34 @@ namespace Practise
             //Test(str);
             //Console.WriteLine(str); 
             #endregion
-
             #region Operator Overloading
 
-            Sample s1 = new Sample() { Name = "Maher", Img = "1" };
-            Sample s2 = new Sample() { Name = "Saber", Img = "2" };
+            //Sample s1 = new Sample() { Name = "Maher", Img = "1" };
+            //Sample s2 = new Sample() { Name = "Saber", Img = "2" };
 
-            Sample s3 = s1+ s2;
-            Sample s4 = s1+ 5;
+            //Sample s3 = s1+ s2;
+            //Sample s4 = s1+ 5;
 
-            Sample s5 = 6;
-            string s = (string)s1;
+            //Sample s5 = 6;
+            //string s = (string)s1;
 
-            Console.WriteLine(s);
+            //Console.WriteLine(s);
 
             #endregion
+
+            //MyList<int> list = new MyList<int>();
+            //list.Add(4);
+            //var x = list.GetObjects();
+            //Console.WriteLine(list.GetByIndex(0));
+            //foreach (var item in list.GetObjects())
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            MyList<Employee> list = new MyList<Employee>();
+            list.Add(new Employee() { Name = "saber" ,Salary = 1000 , Id = 010});
+
+            Console.WriteLine(list.GetByIndex(0).Salary);
 
         }
 
