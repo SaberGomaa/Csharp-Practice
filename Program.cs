@@ -108,6 +108,7 @@ namespace Practise
             //}
 
             MyList<Employee> list = new MyList<Employee>();
+
             list.Add(new Employee() { Name = "saber" ,Salary = 1000 , Id = 010});
 
             Console.WriteLine(list.GetByIndex(0).Salary);
