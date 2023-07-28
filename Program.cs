@@ -97,7 +97,7 @@ namespace Practise
             //Console.WriteLine(s);
 
             #endregion
-
+            #region Genarics
             //MyList<int> list = new MyList<int>();
             //list.Add(4);
             //var x = list.GetObjects();
@@ -107,12 +107,13 @@ namespace Practise
             //    Console.WriteLine(item);
             //}
 
-            MyList<Employee> list = new MyList<Employee>();
+            //MyList<Employee> list = new MyList<Employee>();
 
-            list.Add(new Employee() { Name = "saber" ,Salary = 1000 , Id = 010});
+            //list.Add(new Employee() { Name = "saber" ,Salary = 1000 , Id = 010});
 
-            Console.WriteLine(list.GetByIndex(0).Salary);
-
+            //Console.WriteLine(list.GetByIndex(0).Salary);
+            //Console.WriteLine(list.GetByIndex(10)); 
+            #endregion
         }
 
         static void Test(string str)

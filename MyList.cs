@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practise
 {
-    internal class MyList<T> where T : class
+    internal class MyList<T> where T : new() //where T : class 
     {
         T[] arr;
         int CurrentIndex;
@@ -28,7 +28,10 @@ namespace Practise
 
         public T GetByIndex(int index)
         {
-            return arr[index];
+            if (CurrentIndex > 0 && CurrentIndex <= arr.Length - 1)
+                return arr[index];
+            else
+                return new T();
         }
 
         public T[] GetObjects()
