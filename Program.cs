@@ -116,27 +116,28 @@ namespace Practise
             //int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
             //Console.WriteLine(LastElement(arr));
             #endregion
-
+            #region Interface
             //Human human = new Human();
             //human.Speed = 100;
             //Car car = new Car();
             //car.Speed = 200;
             //MoveObject(car);
 
-            Human[] humans = new Human[3]
-            {
-                new Human {Id = 2, Name = "Saber" , Speed = 200 },
-                new Human {Id = 3, Name = "Ahmed" , Speed = 250 },
-                new Human {Id = 1, Name = "Maher" , Speed = 300},
-            };
+            //Human[] humans = new Human[3]
+            //{
+            //    new Human {Id = 2, Name = "Saber" , Speed = 200 },
+            //    new Human {Id = 3, Name = "Ahmed" , Speed = 250 },
+            //    new Human {Id = 1, Name = "Maher" , Speed = 300},
+            //};
 
-            Array.Sort(humans);
+            //Array.Sort(humans);
 
-            for (int i = 0; i < humans.Length; i++)
-            {
-                Console.WriteLine(humans[i]);
-            }
+            //for (int i = 0; i < humans.Length; i++)
+            //{
+            //    Console.WriteLine(humans[i]);
+            //}
 
+            #endregion
 
         }
         static void MoveObject(IMovable obj)

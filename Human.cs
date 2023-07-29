@@ -24,11 +24,13 @@ namespace Practise
 
         public int CompareTo(Human? human)
         {
-            if (Speed == human.Speed)
-                return 0;
-            else if (Speed > human.Speed)
-                return 1;
-            return -1;
+            return Speed.CompareTo(human.Speed);
+
+            //if (Speed == human.Speed)
+            //    return 0;
+            //else if (Speed > human.Speed)
+            //    return 1;
+            //return -1;
         }
 
         //public int CompareTo(object? obj)
