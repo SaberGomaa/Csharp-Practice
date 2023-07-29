@@ -113,9 +113,15 @@ namespace Practise
 
             //Console.WriteLine(list.GetByIndex(0).Salary);
             //Console.WriteLine(list.GetByIndex(10)); 
+            //int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+            //Console.WriteLine(LastElement(arr));
             #endregion
-        }
 
+        }
+        static T LastElement<T>(T[] arr)
+        {
+            return arr[arr.Length - 1];
+        }
         static void Test(string str)
         {
             str += " Saber"; 
