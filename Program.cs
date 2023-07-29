@@ -117,6 +117,18 @@ namespace Practise
             //Console.WriteLine(LastElement(arr));
             #endregion
 
+            Human human = new Human();
+            human.Speed = 100;
+            Car car = new Car();
+            car.Speed = 200;
+
+            MoveObject(car);
+
+
+        }
+        static void MoveObject(IMovable obj)
+        {
+            obj.Move();
         }
         static T LastElement<T>(T[] arr)
         {
