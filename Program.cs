@@ -2,7 +2,7 @@
 
 namespace Practise
 {
-   
+
 
     internal class Program
     {
@@ -168,7 +168,20 @@ namespace Practise
             //}
 
             #endregion
+            #region New Func ADD 
+            //HumanList humans = new HumanList()
+            //{
+            //    new Human {Id = 1 , Name = "saber" , Speed = 200},
+            //    new Human {Id = 2 , Name = "Maher" , Speed = 250},
+            //    new Human {Id = 3 , Name = "Enas" , Speed = 150}
+            //};
 
+            //foreach (Human human in humans)
+            //{
+            //    Console.WriteLine(human);
+            //}
+
+            #endregion
         }
         static void MoveObject(IMovable obj)
         {
@@ -180,12 +193,12 @@ namespace Practise
         }
         static void Test(string str)
         {
-            str += " Saber"; 
+            str += " Saber";
         }
         public static int MyFun(Complex c)
         {
             c.Id = 15;
-            return c.Id +10 ;
+            return c.Id + 10;
         }
         public static List<int> oddNumbers(int l, int r)
         {
