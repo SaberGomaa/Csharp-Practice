@@ -139,6 +139,26 @@ namespace Practise
 
             #endregion
 
+            #region IEnumrable
+
+            MyListt myListt = new MyListt();
+
+            myListt.Add(10);
+            myListt.Add(30);
+            myListt.Add(40);
+            myListt.Add(30);
+
+            IEnumerator itra = myListt.GetEnumerator();
+
+            foreach (var item in myListt)
+            {
+                Console.WriteLine((int)item);
+            }
+
+
+            #endregion
+
+
         }
         static void MoveObject(IMovable obj)
         {
