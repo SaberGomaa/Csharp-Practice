@@ -156,7 +156,18 @@ namespace Practise
 
 
             #endregion
+            #region Dictionary // bulid using hashTable
 
+            //Dictionary<int,Human> dic = new Dictionary<int , Human>();
+            //dic.Add(1, new Human { Id = 1  , Name = "maher" ,Speed = 300});
+            //dic.Add(2, new Human { Id = 2  , Name = "saber" ,Speed = 250 });
+
+            //foreach (KeyValuePair<int , Human> item in dic) // KeyValuePair is Struct
+            //{
+            //    Console.WriteLine($"Key : {item.Key} , Human :{item.Value} " );
+            //}
+
+            #endregion
 
         }
         static void MoveObject(IMovable obj)
