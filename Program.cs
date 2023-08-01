@@ -182,6 +182,16 @@ namespace Practise
             //}
 
             #endregion
+            #region Nullable
+
+            //int? x = null;
+            ////Nullable<int> y = null; // Struct
+            //int y = 0;
+            //if(x.HasValue) y = x.Value;
+            //Console.WriteLine(y);
+
+            #endregion
+
         }
         static void MoveObject(IMovable obj)
         {
